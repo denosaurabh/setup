@@ -117,12 +117,6 @@ alias screenshot="maim -s | xclip -selection clipboard -t 'image/png'"
 alias code="code ."
 alias update="sudo apt update && sudo apt upgrade"
 
-# ----------------------
-# ALIASES FOR PROJECTS
-alias corsanywhere="sudo docker rm cors-anywhere -f && sudo docker run -d -p 8080:8080 --dns 1.1.1.1 --name cors-anywhere redocly/cors-anywhere"
-alias nifty="cd Desktop/niftyswap-app && corsanywhere && code && konsole -e firefox http://localhost:4444 && yarn dev"
-alias market="cd Desktop/dapp-2 && code && yarn dev"
-
 # ---------------------
 # NVM
 
