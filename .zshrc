@@ -111,11 +111,12 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias cp='cp -i'
 alias ..='cd ..'
+alias home="cd $HOME"
 alias off="shutdown now"
 alias vim="nvim"
 alias screenshot="maim -s | xclip -selection clipboard -t 'image/png'" 
 alias code="code ."
-alias update="sudo apt update && sudo apt upgrade"
+alias gm="sudo apt update && sudo apt upgrade"
 
 # ---------------------
 # NVM
@@ -123,4 +124,9 @@ alias update="sudo apt update && sudo apt upgrade"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+export DENO_INSTALL="/home/denosaurabh/.deno"
+
+export PATH="$PATH:$HOME/bin"
